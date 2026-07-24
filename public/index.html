@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Student Management System</title>
+
+    <!-- Connecting CSS file -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>🎓 Student Management System</h1>
+
+    <!-- Student Name -->
+    <input
+        type="text"
+        id="name"
+        placeholder="Student Name">
+
+    <!-- Email -->
+    <input
+        type="email"
+        id="email"
+        placeholder="Email">
+
+    <!-- Age -->
+    <input
+        type="number"
+        id="age"
+        placeholder="Age">
+
+    <!-- PU Percentage -->
+    <input
+        type="number"
+        id="percentage"
+        placeholder="PU Percentage">
+
+    <h3>Select Course</h3>
+
+    <!--
+        Every checkbox has the same class.
+        JavaScript will collect all checked courses.
+    -->
+
+    <label>
+
+        <input
+            type="radio"
+            class="course"
+            name="course"
+            value="BCA">
+
+        BCA
+
+    </label>
+
+    <label>
+
+        <input
+            type="radio"
+            class="course"
+            name="course"
+            value="BSc">
+
+        BSc
+
+    </label>
+
+    <label>
+
+        <input
+            type="radio"
+            class="course"
+            name="course"
+            value="BCom">
+
+        BCom
+
+    </label>
+
+    <label>
+
+        <input
+            type="radio"
+            class="course"
+            name="course"
+            value="Engineering">
+
+        Engineering
+
+    </label>
+
+    <br><br>
+
+    <!-- Add Button -->
+
+    <button
+        class="add"
+        onclick="addStudent()">
+
+        Add Student
+
+    </button>
+
+    <!-- Show Button -->
+
+    <button
+        class="show"
+        onclick="loadStudents()">
+
+        Show Students
+
+    </button>
+
+    <hr>
+
+    <!-- Student cards will appear here -->
+
+    <div id="students">
+
+    </div>
+
+</div>
+
+<!-- Connecting JavaScript -->
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
